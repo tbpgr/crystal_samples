@@ -1,15 +1,5 @@
-class Fibonacci
-  include Enumerable(Int32)
+pp ["Hoge", "Hoge", "Bar"].map { |name| name.match(/H/) }
+pp ["Hoge", "Hoge", "Bar"].compact_map { |name| name.match(/H/) }
 
-  def each
-    a, b = 0, 1
-    loop do
-      yield b
-      a, b = b, a + b
-    end
-  end
-end
-
-fib = Fibonacci.new
-
-# WIP
+# => ["Hoge", "Hoge", "Bar"].map(&.match(/H/)) = [#<Regex::MatchData "H">, #<Regex::MatchData "H">, nil]
+# => ["Hoge", "Hoge", "Bar"].compact_map(&.match(/H/)) = [#<Regex::MatchData "H">, #<Regex::MatchData "H">]
