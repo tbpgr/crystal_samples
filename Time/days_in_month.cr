@@ -1,0 +1,79 @@
+[2016, 2017].each {|year|
+  (1..12).each{ |month|
+    pp year, month
+    pp Time.days_in_month(year, month)
+  }
+}
+
+# year  # => 2016
+# month # => 1
+# Time.days_in_month(year, month) # => 31
+# year  # => 2016
+# month # => 2
+# Time.days_in_month(year, month) # => 29
+# year  # => 2016
+# month # => 3
+# Time.days_in_month(year, month) # => 31
+# year  # => 2016
+# month # => 4
+# Time.days_in_month(year, month) # => 30
+# year  # => 2016
+# month # => 5
+# Time.days_in_month(year, month) # => 31
+# year  # => 2016
+# month # => 6
+# Time.days_in_month(year, month) # => 30
+# year  # => 2016
+# month # => 7
+# Time.days_in_month(year, month) # => 31
+# year  # => 2016
+# month # => 8
+# Time.days_in_month(year, month) # => 31
+# year  # => 2016
+# month # => 9
+# Time.days_in_month(year, month) # => 30
+# year  # => 2016
+# month # => 10
+# Time.days_in_month(year, month) # => 31
+# year  # => 2016
+# month # => 11
+# Time.days_in_month(year, month) # => 30
+# year  # => 2016
+# month # => 12
+# Time.days_in_month(year, month) # => 31
+# year  # => 2017
+# month # => 1
+# Time.days_in_month(year, month) # => 31
+# year  # => 2017
+# month # => 2
+# Time.days_in_month(year, month) # => 28
+# year  # => 2017
+# month # => 3
+# Time.days_in_month(year, month) # => 31
+# year  # => 2017
+# month # => 4
+# Time.days_in_month(year, month) # => 30
+# year  # => 2017
+# month # => 5
+# Time.days_in_month(year, month) # => 31
+# year  # => 2017
+# month # => 6
+# Time.days_in_month(year, month) # => 30
+# year  # => 2017
+# month # => 7
+# Time.days_in_month(year, month) # => 31
+# year  # => 2017
+# month # => 8
+# Time.days_in_month(year, month) # => 31
+# year  # => 2017
+# month # => 9
+# Time.days_in_month(year, month) # => 30
+# year  # => 2017
+# month # => 10
+# Time.days_in_month(year, month) # => 31
+# year  # => 2017
+# month # => 11
+# Time.days_in_month(year, month) # => 30
+# year  # => 2017
+# month # => 12
+# Time.days_in_month(year, month) # => 31
