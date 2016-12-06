@@ -1,4 +1,8 @@
-Tuple(String, String).from(["key", "value"])       # => {"key", "value"}
-Tuple(String, String).from(["key", "value"]).class # => {String, String}
-Tuple(String, Int64).from(["int key", 99])         # => {"int key", 99}
-Tuple(String, Int64).from(["int key", 99]).class   # => {String, Int64}
+require "json"
+
+data = JSON.parse(%(["int key", 99])).as_a
+pp ({String, Int64}).from(data)
+pp ({String, Int64}).from(data).class
+
+# ({String, Int64}).from(data) # => {"int key", 99}
+# (({String, Int64}).from(data)).class # => Tuple(String, Int64)
